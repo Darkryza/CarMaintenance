@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="w-[25%] md:w-[20%] border-r border-slate-800 bg-slate-900 p-5 flex flex-col">
       {/* logo and title */}
-      <div className="flex gap-3 items-center mb-5">
+      <div className="flex gap-3 mb-5">
         <div className="w-5 h-5 p-3 bg-purple-500 flex justify-center items-center rounded-sm">
           <span className="text-black font-bold">C</span>
         </div>

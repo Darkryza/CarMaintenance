@@ -5,9 +5,9 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <BrowserRouter>
-      <div className="h-screen w-screen flex bg-slate-950 text-white text-xs">
+      <div className="h-screen w-screen flex bg-slate-950 text-white">
         <Navbar />
-        <main>
+        <main className="flex-1 p-5 flex flex-col">
           <Routes>
             <Route path="/" element={<Dashboard />} />
           </Routes>
