@@ -18,7 +18,13 @@ function Dashboard() {
       </div>
       {/* second line - card kereta dan distance km */}
       <div className="flex">
-        <div className="flex-1 rounded-md p-2 border border-slate-800 bg-slate-900"></div>
+        <div className="flex-1 rounded-md p-2 border border-slate-800 bg-linear-to-br from-slate-800 to-slate-900 justify-between">
+          <div className="flex flex-col">
+            <div className="rounded-md p-2 border border-slate-400 inline-bl">
+              WA3494Y
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
