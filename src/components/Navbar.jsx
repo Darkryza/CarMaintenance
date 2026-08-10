@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="w-full p-2 bg-slate-800 border border-slate-700 flex flex-col rounded-lg mb-5">
         <h2 className="text-slate-400 text-[0.5rem]">Kenderaan aktif</h2>
         <div className="flex justify-between">
-          <h1>Myvi 1.5 AV</h1>
+          <h1>Honda City 1.5 V</h1>
           <ChevronDown size={15} className="text-slate-400" />
         </div>
       </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `flex items-center gap-3 p-2 ${
                     isActive &&
-                    "bg-violet-950 rounded-md border border-violet-400 text-violet-400 "
+                    "bg-violet-950 rounded-xl border border-violet-400 text-violet-400 "
                   }`
                 }
               >
