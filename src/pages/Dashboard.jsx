@@ -1,4 +1,5 @@
 import { Plus } from "lucide-react";
+import { Link } from "react-router";
 
 function Dashboard() {
   return (
@@ -84,9 +85,23 @@ function Dashboard() {
         {/* right card */}
         <div className="flex-1 flex flex-col gap-2 bg-slate-900 border border-slate-700 p-5 rounded-3xl">
           {/* title */}
-          <h1 className="text-slate-500 uppercase">
-            JUMLAH DIBELANJAKAN (2026)
-          </h1>
+          <h1 className="text-slate-500 uppercase">Peringatan Aktif</h1>
+          <span className="text-3xl font-bold">3</span>
+          <p className="text-red-400">1 tertunggak</p>
+        </div>
+      </div>
+      {/* fifth line - Incoming reminder */}
+      <div className="flex mb-5 gap-5">
+        <div className="flex-1 flex flex-col gap-3 bg-slate-900 border border-slate-700 p-5 rounded-3xl">
+          {/* first line */}
+          <div className="flex justify-between">
+            {/* title */}
+            <h1 className="text-slate-500">Peringatan terdekat</h1>
+            <Link className="text-violet-500/50 duration-100 hover:text-violet-400">
+              Lihat semua
+            </Link>
+          </div>
+          {/* list reminders */}
         </div>
       </div>
     </>
