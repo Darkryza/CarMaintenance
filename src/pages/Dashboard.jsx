@@ -72,18 +72,14 @@ function Dashboard() {
       {/* forth line - 2 card */}
       <div className="flex mb-5 gap-5">
         {/* left card */}
-        <div className="flex-1 flex flex-col gap-2 bg-slate-900 border border-slate-700 p-5 rounded-3xl">
+        <div className="flex-1 flex flex-col gap-3 bg-slate-900 border border-slate-700 p-5 rounded-3xl">
           {/* title */}
           <h1 className="text-slate-500 uppercase text-sm">Tabungan Servis</h1>
-          {/* incoming km left */}
-          <div className="flex items-end gap-2">
-            <span className="text-white text-2xl font-bold tracking-widest">
-              880
-            </span>
-            <span className="text-slate-500"> km lagi</span>
-          </div>
-          {/* note */}
-          <span className="text-sm text-amber-400">Servis minyak hitam</span>
+          {/* saving for service */}
+          <h1 className="text-2xl font-bold">
+            RM648 <span className="text-slate-500 text-sm">/ RM1,200</span>
+          </h1>
+          <p className="text-green-500">53% tercapai</p>
         </div>
         {/* right card */}
         <div className="flex-1 flex flex-col gap-2 bg-slate-900 border border-slate-700 p-5 rounded-3xl">
@@ -91,8 +87,6 @@ function Dashboard() {
           <h1 className="text-slate-500 uppercase">
             JUMLAH DIBELANJAKAN (2026)
           </h1>
-          <span className="tracking-widest font-bold text-2xl">RM1,860</span>
-          <span className="text-sm text-amber-400">+12% dari tahun lepas</span>
         </div>
       </div>
     </>
