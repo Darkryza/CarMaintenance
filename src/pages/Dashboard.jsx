@@ -1,4 +1,4 @@
-import { Plus } from "lucide-react";
+import { Plus, Timer, TriangleAlert } from "lucide-react";
 import { Link } from "react-router";
 
 function Dashboard() {
@@ -94,7 +94,7 @@ function Dashboard() {
       <div className="flex mb-5 gap-5">
         <div className="flex-1 flex flex-col gap-3 bg-slate-900 border border-slate-700 p-5 rounded-3xl">
           {/* first line */}
-          <div className="flex justify-between">
+          <div className="flex justify-between mb-3">
             {/* title */}
             <h1 className="text-slate-500">Peringatan terdekat</h1>
             <Link className="text-violet-500/50 duration-100 hover:text-violet-400">
@@ -102,6 +102,61 @@ function Dashboard() {
             </Link>
           </div>
           {/* list reminders */}
+          <div className="flex justify-between items-center mb-2 border-b border-slate-700 pb-5">
+            <div className="flex gap-2">
+              <div className="p-2 rounded-lg bg-red-400/20">
+                <TriangleAlert className="text-red-500/50" />
+              </div>
+              <div className="flex flex-col">
+                <h1>Tukar minyak hitam & filter</h1>
+                <p className="text-slate-600 text-xs">
+                  Tertunggak 320km - jangka 5,000km
+                </p>
+              </div>
+            </div>
+            <span className="p-2 bg-red-400/20 rounded-md text-red-400 text-xs h-fit w-fit">
+              Tertunggak
+            </span>
+          </div>
+          <div className="flex justify-between items-center mb-2 border-b border-slate-700 pb-5">
+            <div className="flex gap-2">
+              <div className="p-2 rounded-lg bg-yellow-800/30">
+                <Timer className="text-yellow-500/50" />
+              </div>
+              <div className="flex flex-col">
+                <h1>Roadtax tamat tempoh</h1>
+                <p className="text-slate-600 text-xs">
+                  14 hari lagi - 20 Ogos 2026
+                </p>
+              </div>
+            </div>
+            <span className="p-2 bg-yellow-800/30 rounded-md text-yellow-600 text-xs h-fit w-fit">
+              14 Hari
+            </span>
+          </div>
+          <div className="flex justify-between items-center pb-5">
+            <div className="flex gap-2">
+              <div className="p-2 rounded-lg bg-yellow-800/30">
+                <Timer className="text-yellow-500/50" />
+              </div>
+              <div className="flex flex-col">
+                <h1>Semak tayar & alignment</h1>
+                <p className="text-slate-600 text-xs">880 km lagi</p>
+              </div>
+            </div>
+            <span className="p-2 bg-green-500/20 rounded-md text-green-500 text-xs h-fit w-fit">
+              Terkawal
+            </span>
+          </div>
+        </div>
+      </div>
+      {/* sixth line - Service health */}
+      <div className="flex mb-5 gap-5">
+        <div className="flex-1 flex flex-col gap-3 bg-slate-900 border border-slate-700 p-5 rounded-3xl">
+          {/* title */}
+          <h1 className="text-slate-500">Kesihatan servis</h1>
+          {/* graph donut */}
+          <div className="w-full"></div>
         </div>
       </div>
     </>

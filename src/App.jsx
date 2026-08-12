@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <BrowserRouter>
-      <div className="h-screen w-screen flex bg-slate-950 text-white">
+      <div className="min-h-screen min-w-screen flex bg-slate-950 text-white">
         <Navbar />
         <main className="flex-1 p-5 flex flex-col">
           <Routes>
