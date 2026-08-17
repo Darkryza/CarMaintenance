@@ -1,7 +1,18 @@
 import { Plus, Timer, TriangleAlert } from "lucide-react";
 import { Link } from "react-router";
+import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 
 function Dashboard() {
+  const dataEnjinMinyak = [
+    { name: "Enjin dan minyak", value: 85 },
+    { name: "Balance", value: 100 - 85 },
+  ];
+
+  const dataBrekTauar = [
+    { name: "Enjin dan minyak", value: 85 },
+    { name: "Balance", value: 100 - 85 },
+  ];
+
   return (
     <>
       {/* first line - tittle and button */}
@@ -156,7 +167,48 @@ function Dashboard() {
           {/* title */}
           <h1 className="text-slate-500">Kesihatan servis</h1>
           {/* graph donut */}
-          <div className="w-full"></div>
+          <div className="flex justify-between">
+            <div className="relative w-50 h-50">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={dataEnjinMinyak}
+                    nameKey="name"
+                    dataKey="value"
+                    innerRadius={50}
+                    outerRadius={80}
+                    cornerRadius={8}
+                  >
+                    <Cell fill="#82ca9d" />
+                    <Cell fill="#1e293b" />
+                  </Pie>
+                </PieChart>
+              </ResponsiveContainer>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-white font-bold">85%</span>
+              </div>
+            </div>
+            <div className="relative w-50 h-50">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={dataEnjinMinyak}
+                    nameKey="name"
+                    dataKey="value"
+                    innerRadius={50}
+                    outerRadius={80}
+                    cornerRadius={8}
+                  >
+                    <Cell fill="#82ca9d" />
+                    <Cell fill="#1e293b" />
+                  </Pie>
+                </PieChart>
+              </ResponsiveContainer>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-white font-bold">85%</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
